@@ -5,6 +5,148 @@
     <title>this is carp-portfolio</title>
   </head>
   <body>
+    <h1>Testing display of HTML elements</h1>
+<h2>Subtitle</h2>
+<p>Cras blandit est eget erat tincidunt tempus. Etiam iaculis, lectus non luctus malesuada, diam eros
+    molestie ex, ac commodo tellus tellus id urna. Sed vel est risus. Suspendisse hendrerit aliquet euismod.
+    Aenean aliquam, eros nec egestas scelerisque, neque sapien vehicula dui, eget finibus libero felis ac
+    lacus. Etiam non porta ex, id viverra est. Proin in ultricies lacus. Duis ut dolor mollis, porta libero
+    quis, ornare nisi.</p>
+<h2>This is 2nd level heading</h2>
+<p>This is a test paragraph.</p>
+<h3>This is 3rd level heading</h3>
+<p>This is a test paragraph.</p>
+<h4>This is 4th level heading</h4>
+<p>This is a test paragraph.</p>
+<h5>This is 5th level heading</h5>
+<p>This is a test paragraph.</p>
+<h6>This is 6th level heading</h6>
+<p>This is a test paragraph.</p>
 
+<h2>Basic block level elements</h2>
+<p>This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this
+    page was primarily written for testing the effect of <strong>user style sheets</strong>. You can use it
+    for various other purposes as well, like just checking how your browser displays various HTML elements
+    by default. It can also be useful when testing conversions from HTML format to other formats, since some
+    elements can go wrong then.</p>
+<p>This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive
+    in any sense. I have selected those elements for which it can make sense to write user style sheet
+    rules, in my opionion.</p>
+
+<blockquote>
+    <p>This is a block quotation containing a single paragraph. Well, not quite, since this is not
+        <em>really</em> quoted text, but I hope you understand the point. After all, this page does not use
+        HTML markup very normally anyway.</p>
+</blockquote>
+
+<p>The following contains address information about the author, in an <code>address</code>
+    element.</p>
+<address>
+    <a href="../personal.html" lang="fi" hreflang="en">Jukka Korpela</a>,
+    <a href="mailto:jukkakk@gmail.com">jukkakk@gmail.com</A><br>
+    Päivänsäteenkuja 4 A, Espoo, Finland
+</address>
+
+<h2>Lists</h2>
+
+<p>This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Note that the spacing
+    between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't
+    guess which paragraphs are logically related to a list, e.g. as a "list header".</p>
+
+<ul>
+    <li> One.
+    <li> Two.
+    <li> Three. Well, probably this list item should be longer. Note that for short items lists look better
+        if they are compactly presented, whereas for long items, it would be better to have more vertical
+        spacing between items.
+    <li> Four. This is the last item in this list.
+        Let us terminate the list now without making any more fuss about it.
+</ul>
+
+<h2>Tables</h2>
+
+<p>The following table has a caption. The first row and the first column
+    contain table header cells (<code>th</code> elements) only; other cells
+    are data cells (<code>td</code> elements):</p>
+
+<table
+    summary="Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+    <caption>Sample table: Areas of the Nordic countries, in sq km</caption>
+    <tr>
+        <th scope="col">Country</th>
+        <th scope="col">Total area</th>
+        <th scope="col">Land area</th>
+    </tr>
+    <tr>
+        <td scope="row">Denmark</td>
+        <td> 43,070 </td>
+        <td> 42,370 </td>
+    </tr>
+    <tr>
+        <td scope="row">Finland</td>
+        <td>337,030 </td>
+        <td>305,470 </td>
+    </tr>
+    <tr>
+        <td scope="row">Iceland</td>
+        <td>103,000 </td>
+        <td>100,250 </td>
+    </tr>
+    <tr>
+        <td scope="row">Norway</td>
+        <td>324,220 </td>
+        <td>307,860 </td>
+    </tr>
+    <tr>
+        <td scope="row">Sweden</td>
+        <td>449,964 </td>
+        <td>410,928 </td>
+    </tr>
+</table>
+
+<h2>Character test</h2>
+<p>The following table has some sample characters with
+    annotations. If the browser&#8217;s default font does not
+    contain all of them, they may get displayed using backup fonts.
+    This may cause stylistic differences, but it should not
+    prevent the characters from being displayed at all.</p>
+
+<table>
+    <tr>
+        <th>Char.</th>
+        <th>Explanation</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>ê</td>
+        <td>e with circumflex</td>
+        <td>Latin 1 character, should be ok</td>
+    </tr>
+    <tr>
+        <td>&#8212;</td>
+        <td>em dash</td>
+        <td>Windows Latin 1 character, should be ok, too</td>
+    </tr>
+    <tr>
+        <td>&#x100;</td>
+        <td>A with macron (line above)</td>
+        <td>Latin Extended-A character, not present in all fonts</td>
+    </tr>
+    <tr>
+        <td>&Omega;</td>
+        <td>capital omega</td>
+        <td>A Greek letter</td>
+    </tr>
+    <tr>
+        <td>&#x2212;</td>
+        <td>minus sign</td>
+        <td>Unicode minus</td>
+    </tr>
+    <tr>
+        <td>&#x2300;</td>
+        <td>diameter sign</td>
+        <td>relatively rare in fonts</td>
+    </tr>
+</table>
   </body>
 </html>
